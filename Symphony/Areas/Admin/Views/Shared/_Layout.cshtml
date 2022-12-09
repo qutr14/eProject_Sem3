@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Symphony</title>
+
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" /> <!--Font Awesome-->
+    <link rel="stylesheet" href="~/lib/admin-lte/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css" /> <!--DataTables-->
+    <link rel="stylesheet" href="~/lib/admin-lte/css/adminlte.min.css" /> <!-- AdminLTE Theme Style-->
+
+    <link rel="stylesheet" href="~/lib/toastr.js/toastr.min.css" /> <!-- Toastr css -->
+    @*Google font: source sans pro*@
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/css/admin.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Symphony.styles.css" asp-append-version="true" />
+    @await RenderSectionAsync("Styles", required: false)
+</head>
+<body class="hold-transition sidebar-mini">
+    <div class="wrapper">
+        @Html.Partial("Header") <!-- Header -->
+        @Html.Partial("SideBar") <!-- Side Bar -->
+
+        <div class="content-wrapper">
+            <main role="main" class="pb-3">
+                @RenderBody()
+            </main>
+        </div>
+
+        <footer class="border-top main-footer text-muted">
+            <strong>Copyright &copy; 2022.</strong>
+            <div class="float-right d-none d-sm-block">
+                <strong>Symphony Limited</strong> 1.0
+            </div>
+        </footer>
+    </div>
+
+    <script src="~/lib/admin-lte/plugins/jquery/jquery.min.js"></script> <!-- jQuery for AdminLTE -->
+    <script src="~/lib/admin-lte/plugins/bootstrap/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap 4 for AdminLTE -->
+    <script src="~/lib/admin-lte/plugins/datatables/jquery.dataTables.min.js"></script> <!-- DataTables for AdminLTE -->
+    <script src="~/lib/admin-lte/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script> <!-- DataTables Bootstrap for AdminLTE -->
+    <script src="~/lib/admin-lte/js/adminlte.min.js"></script> <!-- AdminLTE js -->
+    <script src="~/lib/admin-lte/js/demo.min.js"></script> <!-- AdminLTE for demo purposes -->
+    <script src="~/lib/toastr.js/toastr.min.js"></script> <!-- Toastr js-->
+
+
+    <script src="~/js/admin.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

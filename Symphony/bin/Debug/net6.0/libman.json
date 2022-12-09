@@ -1,0 +1,61 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "admin-lte@3.2.0",
+      "destination": "wwwroot/lib/admin-lte/",
+      "files": [
+        "js/pages/dashboard.js",
+        "css/alt/adminlte.components.css",
+        "css/alt/adminlte.components.css.map",
+        "css/alt/adminlte.components.min.css",
+        "css/alt/adminlte.components.min.css.map",
+        "css/alt/adminlte.core.css",
+        "css/alt/adminlte.core.css.map",
+        "css/alt/adminlte.core.min.css",
+        "css/alt/adminlte.core.min.css.map",
+        "css/alt/adminlte.extra-components.css",
+        "css/alt/adminlte.extra-components.css.map",
+        "css/alt/adminlte.extra-components.min.css",
+        "css/alt/adminlte.extra-components.min.css.map",
+        "css/alt/adminlte.light.css",
+        "css/alt/adminlte.light.css.map",
+        "css/alt/adminlte.light.min.css",
+        "css/alt/adminlte.light.min.css.map",
+        "css/alt/adminlte.pages.css",
+        "css/alt/adminlte.pages.css.map",
+        "css/alt/adminlte.pages.min.css",
+        "css/alt/adminlte.pages.min.css.map",
+        "css/alt/adminlte.plugins.css",
+        "css/alt/adminlte.plugins.css.map",
+        "css/alt/adminlte.plugins.min.css",
+        "css/alt/adminlte.plugins.min.css.map",
+        "css/adminlte.css",
+        "css/adminlte.css.map",
+        "css/adminlte.min.css",
+        "css/adminlte.min.css.map",
+        "js/pages/dashboard.min.js",
+        "js/pages/dashboard2.js",
+        "js/pages/dashboard2.min.js",
+        "js/pages/dashboard3.js",
+        "js/pages/dashboard3.min.js",
+        "js/adminlte.js",
+        "js/adminlte.js.map",
+        "js/adminlte.min.js",
+        "js/adminlte.min.js.map",
+        "js/demo.js",
+        "js/demo.min.js",
+        "img/AdminLTELogo.png"
+      ]
+    },
+    {
+      "library": "font-awesome@6.2.1",
+      "destination": "wwwroot/lib/font-awesome/"
+    },
+    {
+      "library": "toastr.js@2.1.4",
+      "destination": "wwwroot/lib/toastr.js/"
+    }
+  ]
+}
